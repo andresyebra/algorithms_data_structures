@@ -152,21 +152,6 @@ module DataStructures
       # @return [Integer]
       def size = length
 
-      def solution(inputString)
-        return true if inputString == inputString.reverse
-
-        chars = inputString.split("")
-        result = chars.each_with_object({}) do |char, result|
-          if result[char]
-            result[char] += 1
-          else
-            result.store(char, 1)
-          end
-        end
-
-        result.values.select(&:odd?) < 1
-      end
-
       alias count size
 
       private
