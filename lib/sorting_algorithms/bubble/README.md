@@ -19,4 +19,4 @@ Create a instance of `BubbleSort` class:
 
 To execute test run in console:
 
-    spec/sorting_algorithms/bubble/bubble_sort_spec.rb
+    rspec spec/sorting_algorithms/bubble/bubble_sort_spec.rb

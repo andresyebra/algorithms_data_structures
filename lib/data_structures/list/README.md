@@ -25,4 +25,4 @@ Create a instance of `LinkedList` class:
 
 To execute test run in console: 
 
-    spec/data_structures/list/linked_list_spec.rb
+    rspec spec/data_structures/list/linked_list_spec.rb
