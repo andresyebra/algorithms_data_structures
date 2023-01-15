@@ -19,4 +19,4 @@ Metrics/MethodLength:
   Max: 30
 
 Metrics/BlockLength:
-  IgnoredMethods: ['describe', 'context']
+  AllowedMethods: ['describe', 'context']
