@@ -46,7 +46,13 @@ module SortingAlgorithms
       def sort! # rubocop:disable Metrics/AbcSize
         (0..array.size).each do |index|
           (index + 1..array.size - 1).each do |j|
-            array[index], array[j] = array[j], array[index] if array[index] > array[j]
+            current_value = array[index]
+            next_value = array[j]
+
+            if current_value > next_value
+              array[index] = current_value
+              array[j] = next_value
+            end
           end
         end
 
